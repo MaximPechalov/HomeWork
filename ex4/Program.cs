@@ -2,10 +2,14 @@
 
 Console.WriteLine("Введите число: ");
 int N = int.Parse(Console.ReadLine());
-int i = 2;
+int i = 1;
 
 while (i <= N)
 {
-    Console.Write($"{i} ");
-    i = i +2;
+    if (i % 2 == 0)
+    {
+        Console.Write($"{i} ");
+    }
+    
+    i++;
 }
